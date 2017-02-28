@@ -25,14 +25,7 @@
 </head>
 <body>
 	<div ng-include="'view/header.html'"></div>
-	<div ng-show="loading" class="container">
-		<h5>Por favor, aguarde</h5>
-		<img src="assets/img/lambda2.png">
-	</div>
-
-	<div ng-hide="loading">
 		<ng-view></ng-view>
-	</div>
 	<div ng-include="'view/footer.html'"></div>
 </body>
 </html>
