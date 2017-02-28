@@ -1,0 +1,7 @@
+<div class="search-panel container">
+	<input  ng-model="filtro" ng-model-options="{debounce: 500}" type="search" class="search" placeholder="Busque por nomes">
+</div>
+<main class="scientists container">
+	<meu-painel class="scientist" action="toTop()" ng-repeat="scientist in scientists | filter: filtro" nome="{{scientist.nome}}" id="{{scientist.id}}" src="{{scientist.src}}">
+	</meu-painel>	
+</main>

@@ -1,0 +1,23 @@
+@import "mixins.scss";
+
+.site-header  {
+        width: 100%;
+        background: $main-color;  
+		> h1 {
+			padding: 10px;
+			background-image: url(../img/logo.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			text-indent: -9999px;
+			height: 50px;
+			overflow: hidden;
+		 }
+
+		 > h2 {
+			color: #2c3e50;
+			font-size: 1.1em;
+			text-align: center;
+		}
+
+}

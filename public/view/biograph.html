@@ -1,0 +1,8 @@
+<div class="container panel-biograph">
+	<a href="/" class="back">Voltar</a>
+	<h1 class="biograph-title">{{scientist.nome | uppercase}}</h1>
+	<img src="assets/img/{{scientist.src}}.jpg" alt="{{scientist.nome}}">
+	<div class="biograph-description">
+		<p ng-repeat="x in scientist.dados">{{x}}</p>
+	</div>
+</div>

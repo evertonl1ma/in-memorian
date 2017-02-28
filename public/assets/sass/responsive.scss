@@ -1,0 +1,67 @@
+@media screen and (min-width: 450px) {
+	.site-header {
+		.header-title {
+			height: 60px;
+		}
+	}
+	.scientists {
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		> .scientist {
+		width: 49%;
+		margin-right: 2%;
+
+		&:nth-child(even) {
+			margin-right: 0;
+		}
+	}
+	}
+	
+}
+
+
+@media screen and (min-width: 720px) {
+	.site-header {
+		.header-title {
+			height: 80px;
+			background-position: left;
+		}
+
+		h2 {
+			text-align: left;
+			font-size: 1.4em;
+		}
+	}
+	.scientists {
+
+		 .scientist {
+			width: 30%;
+			margin: 1%;
+			margin-bottom: 15px;
+			flex-grow: 1;
+
+		  &:nth-child(even) {
+			margin-right: 1%;
+		}
+		}
+		
+	}
+
+}
+
+@media screen and (min-width: 1200px) {
+	.scientists {
+
+		.scientist {
+			width: 21%;
+			margin: 2%;
+			flex-grow: 0;
+
+			&:nth-child(even) {
+			margin-right: 2%;
+		}
+		}  
+	}
+}
+

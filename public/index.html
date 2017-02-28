@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="inMemorian">
+<head>
+	<base href="/">
+	<meta charset="utf-8">
+	<title>In Memorian</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="keywords" content="Ciência da computação, cientistas, personalidades, tecnologia">
+	<meta name="description" content="Homenagem aos grandes nomes da ciência da computação">
+	<meta name="author" href="https://github.com/evertonl1ma" content="Everton Lima"> 
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/lambda.png">
+	<link href='https://fonts.googleapis.com/css?family=Roboto|Lobster' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="js/lib/angular.min.js"></script>
+	<script src="js/lib/angular-route.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/controllers/inMemorianCtrl.js"></script>
+	<script src="js/controllers/biographCtrl.js"></script>
+	<script src="js/directives/minhas-diretivas.js"></script>
+	<script src="js/routes/routeConfig.js"></script>
+	<script src="js/services/interceptorsConfig.js"></script>
+	<script src="js/interceptors/errorInterceptor.js"></script>
+	<script src="js/interceptors/loadingInterceptor.js"></script>
+</head>
+<body>
+	<div ng-include="'view/header.html'"></div>
+	<div ng-show="loading" class="container">
+		<h5>Por favor, aguarde</h5>
+		<img src="assets/img/lambda2.png">
+	</div>
+
+	<div ng-hide="loading">
+		<ng-view></ng-view>
+	</div>
+	<div ng-include="'view/footer.html'"></div>
+</body>
+</html>
