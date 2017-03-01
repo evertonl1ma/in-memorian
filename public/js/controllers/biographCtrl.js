@@ -1,7 +1,7 @@
 angular.module("inMemorian").controller("biographCtrl", function($scope, $http, $routeParams) {
 	$scope.scientist= {};
 	
-	$http.get("/scientists/" + $routeParams.id)
+	$http.get("https://in-memorian.herokuapp.com/scientists/" + $routeParams.id)
 	.then(function(success) { 
 		$scope.scientist= success.data;
 	 }, 

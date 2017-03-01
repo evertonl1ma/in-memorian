@@ -6,7 +6,7 @@ angular.module("inMemorian").controller("inMemorianCtrl", function($scope, $http
 		document.body.scrollTop= 0;
 	};
 
-	$http.get("/scientists")
+	$http.get("https://in-memorian.herokuapp.com/scientists")
 	.then(function(success) { 
 		$scope.scientists= success.data;
 	 }, 
