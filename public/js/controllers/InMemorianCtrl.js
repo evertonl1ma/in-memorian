@@ -1,6 +1,7 @@
 angular.module("inMemorian").controller("inMemorianCtrl", function($scope, $http) {
 	$scope.scientists= [];
 	$scope.filtro= "";
+	$scope.titulo= "In memorian testes";
 	
 	$scope.toTop= function() {
 		document.body.scrollTop= 0;

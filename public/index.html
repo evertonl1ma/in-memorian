@@ -25,7 +25,7 @@
 </head>
 <body>
 	<div ng-include="'view/header.html'"></div>
-		<h1>{{titulo}}</h1>
+		<h1 ng-controller="inMemorianCtrl">{{titulo}}</h1>
 		<ng-view></ng-view>
 		
 	<div ng-include="'view/footer.html'"></div>
