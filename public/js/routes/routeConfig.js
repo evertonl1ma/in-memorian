@@ -3,7 +3,7 @@ angular.module("inMemorian").config(function($routeProvider, $locationProvider) 
 
 	$routeProvider.when("/home", {
 		templateUrl: "view/scientist.html",
-		controller: "inMemorianCtrl"
+		controller: "main"
 	});
 
 	$routeProvider.when("/biograph/:id", {
